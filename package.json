@@ -1,0 +1,38 @@
+{
+  "name": "projects-by-melissa",
+  "version": "1.0.0",
+  "description": "Full Stack Application of all Projects Current and Past",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "postinstall": "cd projects && npm i && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissa-24/projects-by-melissa.git"
+  },
+  "author": "Melissa Longenberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melissa-24/projects-by-melissa/issues"
+  },
+  "homepage": "https://github.com/melissa-24/projects-by-melissa#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "connect-session-knex": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.2.0",
+    "knex": "^0.21.12",
+    "knex-cleaner": "^1.3.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2",
+    "sqlite3": "^5.0.0"
+  }
+}
