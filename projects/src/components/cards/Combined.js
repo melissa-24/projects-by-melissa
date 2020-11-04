@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Organization = () => {
+const Combined = () => {
     return (
         <>
         </>
     )
 }
 
-export default Organization
+export default Combined

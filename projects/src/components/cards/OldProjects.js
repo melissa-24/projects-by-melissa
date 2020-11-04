@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Organization = () => {
+const OldProjects = () => {
     return (
         <>
         </>
     )
 }
 
-export default Organization
+export default OldProjects

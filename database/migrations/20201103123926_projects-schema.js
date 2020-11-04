@@ -11,11 +11,11 @@ exports.up = function(knex, Promise) {
         tbl.string('name').notNullable();
         tbl.string('description');
         tbl.string('source');
-        tbl.string('alt-source');
-        tbl.string('extra-source');
+        tbl.string('altSource');
+        tbl.string('extraSource');
         tbl.string('link');
-        tbl.string('alt-link');
-        tbl.string('extra-link');
+        tbl.string('altLink');
+        tbl.string('extraLink');
     })
   };
   

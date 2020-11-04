@@ -8,8 +8,10 @@ const NavOptions = (props) => {
 
     const navOptions = [
         "Home",
-        "Current Projects",
-        "Old Projects"
+        "Front End",
+        "Back End",
+        "Full Stack",
+        "Organization"
     ]
 
     const handleClick = (e) => {

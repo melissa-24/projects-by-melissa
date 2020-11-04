@@ -6,6 +6,12 @@ import './css/core.css'
 import NavBar from './components/nav/NavBar'
 import NavSmall from './components/nav/NavSmall'
 
+import Home from './components/Home'
+import FrontEnd from './components/FrontEnd'
+import BackEnd from './components/BackEnd'
+import FullStack from './components/FullStack'
+import Organization from './components/Organizations'
+
 const App = () => {
   return (
     <>
@@ -17,14 +23,20 @@ const App = () => {
       </nav>
     </header>
      <Switch>
-       <Route path='/Current Projects'>
-
+       <Route path='/Front End'>
+         <FrontEnd />
        </Route>
-       <Route path='/Old Projects'>
-
+       <Route path='/Back End'>
+        <BackEnd />
+       </Route>
+       <Route path='/Full Stack'>
+         <FullStack />
+       </Route>
+       <Route path='/Organization'>
+         <Organization />
        </Route>
        <Route exact path='/'>
-
+        <Home />
        </Route>
      </Switch>
     </>
