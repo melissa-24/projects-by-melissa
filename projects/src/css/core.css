@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(https://fonts.gstatic.com/s/badscript/v9/6NUT8F6PJgbFWQn47_x7lOw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Coming Soon Regular'), local('ComingSoon-Regular'), url(https://fonts.gstatic.com/s/comingsoon/v12/qWcuB6mzpYL7AJ2VfdQR1u-S.ttf) format('truetype');
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4cdb1;
+}
+body #root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a3488f;
+  width: 95%;
+  padding: 0.2em;
+}
+body #root header nav .navbar {
+  display: none;
+}
+body #root header nav .nav-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root header nav .nav-small .nav-option {
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+}
+body #root header nav .nav-small .nav-option:hover {
+  background-color: #cea9c6;
+}
+body #root header nav .nav-small button {
+  border: 2px groove #5a462d;
+  background-color: #e4cdb1;
+}
+body #root .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

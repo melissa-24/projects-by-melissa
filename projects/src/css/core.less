@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Coming+Soon&display=swap');
+
+// font-family: 'Bad Script', cursive;
+// font-family: 'Coming Soon', cursive;
+// letter-spacing: .2em;
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@bg: #e4cdb1;
+@altbg: #5a462d;
+@navbg: #a3488f;
+@navhover: #cea9c6;
+
+
+body {
+    .flexcolumn();
+    background-color: @bg;
+    #root {
+        .flexcolumn();
+        header {
+            .flexcolumn();
+            nav {
+                .flexcolumn();
+                background-color: @navbg;
+                width: 95%;
+                padding: .2em;
+                .navbar{
+                    display: none;
+                }
+                .nav-small {
+                    .flexcolumn();
+                    .nav-option {
+                        text-decoration: none;
+                        width: 50%;
+                        text-align: center;
+                        &:hover {
+                            background-color: @navhover;
+                        }
+                    }
+                    button {
+                        border: 2px groove @altbg;
+                        background-color: @bg;
+                    }
+                }
+            }
+        }
+        .home {
+            .flexcolumn();
+        }
+        .projects {
+            .flexcolumn();
+        }
+        footer {
+            .flexrow();
+        }
+    }
+}
