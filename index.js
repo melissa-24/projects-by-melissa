@@ -8,6 +8,7 @@ const session = require('express-session')
 const knexSessionStore = require('connect-session-knex')(session)
 
 const projectRouter = require('./routers/projectRouter')
+const typesRouter = require('./routers/typesRouter')
 
 const server = express()
 
@@ -41,6 +42,7 @@ server.use(session(sessionConfig))
 server.use(express.static(path.join(__dirname, 'projects/build')))
 
 server.use('/projects', projectRouter)
+server.use('/types', typesRouter)
 
 server.get('/', (req, res) => {
     res.json({ message: 'Server is running'})
