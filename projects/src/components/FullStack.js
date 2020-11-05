@@ -7,7 +7,7 @@ import OldComb from './cards/old/OldComb'
 
 const FullStack = () => {
     return (
-        <>
+        <div className='projects'>
         <h2>These projects are Full Stack Projects</h2>
         <h3>They have both a Front and Back End</h3>
         <div className='current'>
@@ -22,7 +22,7 @@ const FullStack = () => {
             <h4>Older projects no longer being updated (2 repositories)</h4>
             <OldComb />
         </div>
-        </>
+        </div>
     )
 }
 

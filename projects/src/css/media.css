@@ -1,0 +1,94 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 400px) {
+  body #root .home {
+    width: 85%;
+  }
+  body #root .projects .current .cards .project-card {
+    width: 75%;
+  }
+  body #root .projects .current .cards .project-card p {
+    width: 95%;
+    padding: 0.1em;
+  }
+  body #root .projects .old .project-card {
+    width: 75%;
+  }
+  body #root .projects .old .project-card p {
+    width: 75%;
+    padding: 0.1em;
+  }
+}
+@media only screen and (min-width: 530px) {
+  body #root .home {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 730px) {
+  body #root header nav {
+    padding: 0 2em;
+  }
+  body #root header nav .nav-small {
+    display: none;
+  }
+  body #root header nav .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2em 1em;
+  }
+  body #root header nav .navbar .nav-option {
+    text-decoration: none;
+    width: 95%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  body #root header nav .navbar .nav-option:hover {
+    background-color: #cea9c6;
+  }
+  body #root header nav .navbar .clicked {
+    background-color: #5a462d;
+    color: #e4cdb1;
+  }
+  body #root header nav .navbar .clicked:hover {
+    background-color: #5a462d;
+  }
+}
+@media only screen and (min-width: 850px) {
+  body #root .projects .current .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body #root .projects .current .cards .project-card {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  body #root .projects .old .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body #root .projects .old .cards .project-card {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}

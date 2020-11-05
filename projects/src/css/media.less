@@ -4,3 +4,129 @@
 @730: ~"only screen and (min-width: 730px)";
 @530: ~"only screen and (min-width: 530px)";
 @400: ~"only screen and (min-width: 400px)";
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@bg: #e4cdb1;
+@altbg: #5a462d;
+@navbg: #a3488f;
+@navhover: #cea9c6;
+
+@media @400 {
+    body {
+        #root {
+            .home {
+                width: 85%;
+            }
+            .projects {
+                .current {
+                    .cards {
+                        .project-card {
+                            width: 75%;
+                            p {
+                                width: 95%;
+                                padding: .1em;
+                            }
+                        }
+                    }
+                }
+                .old {
+                    .project-card {
+                        width: 75%;
+                        p {
+                            width: 75%;
+                            padding: .1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media @530 {
+    body {
+        #root {
+            .home {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media @730 {
+    body {
+        #root {
+            header {
+                nav {
+                    padding: 0 2em;
+                    .nav-small {
+                        display: none;
+                    }
+                    .navbar {
+                        .flexrow();
+                        padding: .2em 1em;
+                        .nav-option {
+                            text-decoration: none;
+                            width: 95%;
+                            justify-content: space-around;
+                            text-align: center;
+                            margin: .2em;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            &:hover {
+                                background-color: @navhover;
+                            }
+                        }
+                        .clicked {
+                            background-color: @altbg;
+                            color: @bg;
+                            &:hover {
+                                background-color: @altbg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media @850 {
+    body {
+        #root {
+            .projects {
+                .current {
+                    .cards {
+                        .flexrow();
+                        flex-wrap: wrap;
+                        .project-card {
+                            flex-wrap: wrap;
+                            width: 400px;
+                        }
+                    }
+                }
+                .old {
+                    .cards {
+                        .flexrow();
+                        flex-wrap: wrap;
+                        .project-card {
+                            flex-wrap: wrap;
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

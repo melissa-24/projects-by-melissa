@@ -3,11 +3,11 @@ import React from 'react'
 
 const List = (props) => {
     const { projects } = props
-    if (!projects || projects.length === 0) return <p>Adding Projects</p>
+    if (!projects || projects.length === 0) return <p>More projects being added soon</p>
     if (projects.altSource ||projects.extraSource || projects.source === null) return <></>
     if (projects.altLink ||projects.extraLink || projects.link === null) return <></>
     return (
-        <>
+        <div className='cards'>
         {console.log(projects)}
         {projects.map((project) => {
             return (
@@ -25,7 +25,7 @@ const List = (props) => {
                 </div>
             )
         })}
-        </>
+        </div>
     )
 }
 

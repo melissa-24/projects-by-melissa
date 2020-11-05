@@ -24,12 +24,17 @@
   align-items: center;
   justify-content: center;
 }
+.font {
+  font-family: 'Bad Script', cursive;
+  letter-spacing: 0.2em;
+}
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #e4cdb1;
+  font-family: 'Coming Soon', cursive;
 }
 body #root {
   display: flex;
@@ -42,6 +47,10 @@ body #root header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 95%;
+}
+body #root header h1 {
+  font-family: 'Bad Script', cursive;
 }
 body #root header nav {
   display: flex;
@@ -49,7 +58,7 @@ body #root header nav {
   align-items: center;
   justify-content: center;
   background-color: #a3488f;
-  width: 95%;
+  width: 100%;
   padding: 0.2em;
 }
 body #root header nav .navbar {
@@ -65,6 +74,9 @@ body #root header nav .nav-small .nav-option {
   text-decoration: none;
   width: 50%;
   text-align: center;
+  font-size: 1.1em;
+  padding: 0.2em;
+  font-weight: bold;
 }
 body #root header nav .nav-small .nav-option:hover {
   background-color: #cea9c6;
@@ -72,22 +84,192 @@ body #root header nav .nav-small .nav-option:hover {
 body #root header nav .nav-small button {
   border: 2px groove #5a462d;
   background-color: #e4cdb1;
+  padding: 0.1em 1.5em;
+  font-family: 'Bad Script', cursive;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 1em;
 }
 body #root .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  width: 95%;
 }
 body #root .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+body #root .projects h2 {
+  width: 95%;
+}
+body #root .projects .current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .projects .current p {
+  border: 3px groove #5a462d;
+  padding: 0.2em;
+}
+body #root .projects .current .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .projects .current .cards .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cea9c6;
+  border: 3px groove #5a462d;
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+}
+body #root .projects .current .cards .project-card p {
+  border: none;
+}
+body #root .projects .current .cards .project-card a {
+  padding: 0.2em 0.5em;
+}
+body #root .projects .old {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #root .projects .old p {
+  border: 3px groove #5a462d;
+  padding: 0.2em;
+}
+body #root .projects .old .cards .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cea9c6;
+  border: 3px groove #5a462d;
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+}
+body #root .projects .old .cards .project-card p {
+  border: none;
+}
+body #root .projects .old .cards .project-card a {
+  padding: 0.2em 0.5em;
 }
 body #root footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #5a462d;
+  border: 3px groove #a3488f;
+  color: #e4cdb1;
+  width: 95%;
+}
+body #root footer p {
+  padding: 0 0.5em;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 400px) {
+  body #root .home {
+    width: 85%;
+  }
+  body #root .projects .current .cards .project-card {
+    width: 75%;
+  }
+  body #root .projects .current .cards .project-card p {
+    width: 95%;
+    padding: 0.1em;
+  }
+  body #root .projects .old .project-card {
+    width: 75%;
+  }
+  body #root .projects .old .project-card p {
+    width: 75%;
+    padding: 0.1em;
+  }
+}
+@media only screen and (min-width: 530px) {
+  body #root .home {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 730px) {
+  body #root header nav {
+    padding: 0 2em;
+  }
+  body #root header nav .nav-small {
+    display: none;
+  }
+  body #root header nav .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2em 1em;
+  }
+  body #root header nav .navbar .nav-option {
+    text-decoration: none;
+    width: 95%;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  body #root header nav .navbar .nav-option:hover {
+    background-color: #cea9c6;
+  }
+  body #root header nav .navbar .clicked {
+    background-color: #5a462d;
+    color: #e4cdb1;
+  }
+  body #root header nav .navbar .clicked:hover {
+    background-color: #5a462d;
+  }
+}
+@media only screen and (min-width: 850px) {
+  body #root .projects .current .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body #root .projects .current .cards .project-card {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  body #root .projects .old .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body #root .projects .old .cards .project-card {
+    flex-wrap: wrap;
+    width: 400px;
+  }
 }

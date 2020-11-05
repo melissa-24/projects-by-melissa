@@ -8,7 +8,7 @@ import CurMulti from './cards/current/CurMulti'
 const FrontEnd = () => {
 
     return (
-        <>
+        <div className='projects'>
         <h2>These projects are Front End Only Projects</h2>
         <div className='current'>
             <h4>On going or current Projects</h4>
@@ -20,7 +20,7 @@ const FrontEnd = () => {
             <h4>Older projects no longer being updated</h4>
             <OldFe />
         </div>
-        </>
+        </div>
     )
 }
 

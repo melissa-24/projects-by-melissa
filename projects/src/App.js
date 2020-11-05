@@ -39,6 +39,9 @@ const App = () => {
         <Home />
        </Route>
      </Switch>
+     <footer>
+       <p>Created by Melissa Longenberger</p>
+     </footer>
     </>
   );
 };
